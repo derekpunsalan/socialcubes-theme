@@ -1,4 +1,4 @@
-#summary General installation steps for new users
+#summary Installation instructions for new users
 #labels Phase-Deploy
 
 1. Install Sweetcron lifestreaming software - http://code.google.com/p/sweetcron/
