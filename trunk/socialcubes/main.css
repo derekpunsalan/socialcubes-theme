@@ -1,0 +1,255 @@
+/*	
+	Theme Name:SocialCubes
+	Version:0.1
+	Author:Derek Punsalan
+	Contact:http://5thirtyone.com/contact
+*/
+
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;
+}
+body {
+	font-size:12px;
+	font-family:arial, verdana, sans-serif;
+	background:#222;
+	color:#aaa;
+}
+a {
+	color:#fff;
+}
+.centerbox {
+	width:959px;
+	margin:0 auto;
+	overflow:hidden;
+}
+#sidebar_container {
+	width:220px;
+	float:right;
+}
+
+/* =----------------------------------- masthead */
+#masthead {
+	background:#000;
+	color:#aaa;
+	height:48px;
+	margin:0 0 20px;
+	border-bottom:1px solid #333;
+}
+#tagline {
+	float:left;
+	padding:0 3px;
+	line-height:48px;
+	font-size:18px;
+}
+#masthead #navigation {
+	float:right;
+	height:48px;
+	line-height:48px;
+	margin:0 3px 0 0;
+}
+#masthead #navigation li {
+	margin:0 0 0 15px;
+	float:left;
+	text-transform:lowercase;
+}
+#masthead #navigation li a {
+	font-weight:normal;
+	color:#555;
+}
+#masthead #navigation li a:hover {
+	color:#fff;
+}
+
+/* =----------------------------------- results for recent activity */
+#activity_list {
+	background:#000;
+	padding:8px 0 0;
+	border:1px solid #333;
+}
+#activity_list .activity_item {
+	float:left;
+	margin:0 0 8px 8px;
+	width:148px;
+	height:148px;
+	border:1px solid #000;
+}
+#activity_list .activity_item.twitter {
+	border-color:#6493B6;
+}
+#activity_list .activity_item .activity_list_inner {
+	height:148px;
+	width:148px;
+	overflow:hidden;
+}
+.date {
+	display:none;
+}
+#activity_list .activity_item .activity_list_inner .content_wrapper p {
+	color:#ddd;
+}
+#activity_list .activity_item .activity_list_inner .content_wrapper p.post_title {
+	display:block;
+	position:absolute;
+	top:7px;
+	left:0;
+	right:7px;
+	padding:10px;
+	cursor:pointer;
+	color:#ddd;
+	font-weight:bold;
+}
+#activity_list .activity_item .activity_list_inner .content_wrapper a {
+	padding:0;
+	display:inline;
+	height:auto;
+	color:#333;
+}
+#activity_list .activity_item .activity_list_inner .photo, #activity_list .activity_item .activity_list_inner .blog {
+	position:relative;
+	width:148px;
+	height:148px;
+	display:block;
+}
+#activity_list .activity_item .activity_list_inner .photo .post_title {
+	background:#FF0084;
+}
+#activity_list .activity_item .activity_list_inner .blog .post_title {
+	background:#990000;
+}
+#activity_list .activity_item .activity_list_inner .blog.delicious .post_title {
+	background:#3274d0;
+}
+#activity_list .twitter .activity_list_inner .excerpt {
+	overflow:hidden;
+	margin:10px;
+	font-weight:bold;
+	color:#ddd;
+}
+#activity_list .twitter .activity_list_inner .excerpt a {
+	color:#ddd;
+}
+#activity_list .brightkite .activity_list_inner {
+	background-image:none;
+	position:relative;
+}
+#activity_list .brightkite .activity_list_inner .post_title {
+	color:#003E7E;
+}
+#activity_list .brightkite .activity_list_inner .type_label {
+	color:#213442;
+	padding:5px 0 10px 10px;
+}
+#activity_list .brightkite .activity_list_inner .content_wrapper {
+	background:url(images/bg-brightkite.png) no-repeat top left;
+}
+#activity_list .link .activity_list_inner .content_wrapper {
+	position:relative;
+}
+#activity_list .brightkite .activity_list_inner .content_wrapper .post_title {
+	background:#1D3140;
+}
+
+/* =----------------------------------- single post view */
+.singleton {
+	background:#000;
+	border:1px solid #333;
+	width:500px;
+	padding:25px;
+	margin:0 auto;
+}
+.singleton h2 {
+	font-size:16px;
+	margin:0 0 15px 0;
+}
+.singleton div p {
+	margin:1em 0;
+	line-height:18px;
+}
+.singleton p.source {
+	text-align:right;
+}
+.singleton p.source a {
+	color:#777;
+}
+.singleton p.source a:hover {
+	color:#fff;
+}
+.singleton .tag_list {
+	float:left;
+	border-top:1px solid #222;
+	padding-top:15px;
+	width:100%;
+}
+.singleton .tag_list li {
+	float:left;
+	line-height:28px;
+	height:28px;
+	width:24%;
+	margin:0 4px 7px 0;
+}
+.singleton .tag_list li a {
+	font-weight:bold;
+	display:block;
+	height:28px;
+	line-height:28px;
+	padding:0 7px;
+	background:#000;
+	border:1px solid #000;
+	color:#777;
+}
+.singleton .tag_list li a:hover {
+	background:#FF0084;
+	color:#fff;
+}
+
+/* =----------------------------------- pagination */
+.pagination {
+	font-size:16px;
+	color:#444;
+	height:32px;
+	line-height:32px;
+	text-align:right;
+	color:#fff;
+	padding:0 10px 0 0;
+}
+.pagination a {
+	color:#555;
+}
+.pagination a:hover {
+	color:#fff;
+}
+
+/* =----------------------------------- footer */
+#footer {
+	padding:15px 0;
+	color:#333;
+}
+#footer a {
+	color:#555;
+}
+#footer a:hover {
+	color:#fff;
+}
+
+/* =----------------------------------- floats + clearing */
+.clearfix:after { 
+	content:"."; 
+	display:block; 
+	height:0; 
+	clear:both; 
+	visibility:hidden; 
+}
+.clearfix {
+	display:inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {
+	height:1%;
+}
+.clearfix {
+	display:block;
+}
+/* End hide from IE-mac */
